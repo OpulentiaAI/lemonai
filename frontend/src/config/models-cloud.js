@@ -1,7 +1,8 @@
 // Cloud model configuration for Vercel deployment
 export const CLOUD_MODELS = [
   {
-    id: 'claude-opus-4-20250514',
+    id: 1001,
+    model_id: 'claude-opus-4-20250514',
     name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic',
@@ -12,7 +13,8 @@ export const CLOUD_MODELS = [
     logo: '/images/anthropic.png'
   },
   {
-    id: 'claude-3-5-sonnet-20241022',
+    id: 1002,
+    model_id: 'claude-3-5-sonnet-20241022',
     name: 'Claude 3.5 Sonnet',
     platform: 'Anthropic',
     platform_id: 'anthropic',
@@ -22,7 +24,8 @@ export const CLOUD_MODELS = [
     logo: '/images/anthropic.png'
   },
   {
-    id: 'gpt-4-turbo-preview',
+    id: 1003,
+    model_id: 'gpt-4-turbo-preview',
     name: 'GPT-4 Turbo',
     platform: 'OpenAI',
     platform_id: 'openai',
@@ -32,7 +35,8 @@ export const CLOUD_MODELS = [
     logo: '/images/openai.png'
   },
   {
-    id: 'gpt-3.5-turbo',
+    id: 1004,
+    model_id: 'gpt-3.5-turbo',
     name: 'GPT-3.5 Turbo',
     platform: 'OpenAI',
     platform_id: 'openai',
@@ -42,7 +46,8 @@ export const CLOUD_MODELS = [
     logo: '/images/openai.png'
   },
   {
-    id: 'gemini-pro',
+    id: 1005,
+    model_id: 'gemini-pro',
     name: 'Gemini Pro',
     platform: 'Google',
     platform_id: 'google',
@@ -52,7 +57,8 @@ export const CLOUD_MODELS = [
     logo: '/images/google.png'
   },
   {
-    id: 'mixtral-8x7b-32768',
+    id: 1006,
+    model_id: 'mixtral-8x7b-32768',
     name: 'Mixtral 8x7B',
     platform: 'Groq',
     platform_id: 'groq',
@@ -62,7 +68,8 @@ export const CLOUD_MODELS = [
     logo: '/images/groq.png'
   },
   {
-    id: 'deepseek-coder',
+    id: 1007,
+    model_id: 'deepseek-coder',
     name: 'DeepSeek Coder',
     platform: 'DeepSeek',
     platform_id: 'deepseek',
@@ -72,7 +79,8 @@ export const CLOUD_MODELS = [
     logo: '/images/deepseek.png'
   },
   {
-    id: 'pplx-70b-online',
+    id: 1008,
+    model_id: 'pplx-70b-online',
     name: 'Perplexity 70B Online',
     platform: 'Perplexity',
     platform_id: 'perplexity',
@@ -142,19 +150,19 @@ export const CLOUD_PLATFORMS = [
 
 export const DEFAULT_MODEL_SETTINGS = {
   assistant: {
-    model_id: 'claude-opus-4-20250514',
+    model_id: 1001,
     model_name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   },
   'topic-naming': {
-    model_id: 'claude-3-5-sonnet-20241022',
+    model_id: 1002,
     model_name: 'Claude 3.5 Sonnet',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   },
   'task-planning': {
-    model_id: 'claude-opus-4-20250514',
+    model_id: 1001,
     model_name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic'

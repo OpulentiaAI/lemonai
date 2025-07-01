@@ -1,26 +1,29 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 
-// Default model settings
-const DEFAULT_SETTINGS = {
-  assistant: {
-    model_id: 'claude-opus-4-20250514',
+// Default model settings - return as array to match expected format
+const DEFAULT_SETTINGS = [
+  {
+    setting_type: 'assistant',
+    model_id: 1001,
     model_name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   },
-  'topic-naming': {
-    model_id: 'claude-3-5-sonnet-20241022',
+  {
+    setting_type: 'topic-naming',
+    model_id: 1002,
     model_name: 'Claude 3.5 Sonnet',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   },
-  'task-planning': {
-    model_id: 'claude-opus-4-20250514',
+  {
+    setting_type: 'task-planning',
+    model_id: 1001,
     model_name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   }
-};
+];
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method === 'GET') {
