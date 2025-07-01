@@ -18,10 +18,10 @@
               <span class="plus-icon">
                 <Add />
               </span>
-              <span class="button-text">{{ $t('lemon.sidebar.newTask') }}</span>
+              <span class="button-text">{{ $t('opulent.sidebar.newTask') }}</span>
               <!-- <span class="shortcut">
                 <span class="shortcut-icon"><Command /></span>
-                <span class="shortcut-text">{{ $t('lemon.sidebar.shortcutKey') }}</span>
+                <span class="shortcut-text">{{ $t('opulent.sidebar.shortcutKey') }}</span>
               </span> -->
             </button>
           </div>
@@ -48,25 +48,25 @@
                       <div class="chat-model-name" v-if="chat.platform_name && chat.model_name">{{ chat.platform_name }} - {{ chat.model_name }}</div>
                     </div>
                     <div class="more-options">
-                      <a-tooltip :title="$t('lemon.sidebar.moreOptions')" placement="top" :arrow="false">
+                      <a-tooltip :title="$t('opulent.sidebar.moreOptions')" placement="top" :arrow="false">
                         <More @click.stop="toggleDropdown(chat.conversation_id)" class="more-options-icon" />
                       </a-tooltip>
                       <div class="more-options-dropdown" v-if="dropdownVisible === chat.conversation_id">
                         <!-- <div class="more-options-item">
                           <Share />
-                          <span class="more-options-item-text">{{ $t('lemon.sidebar.share') }}</span>
+                          <span class="more-options-item-text">{{ $t('opulent.sidebar.share') }}</span>
                         </div> -->
                         <div class="more-options-item" @click.stop="handleEditName(chat)">
                           <Edit />
-                          <span class="more-options-item-text">{{ $t('lemon.sidebar.rename') }}</span>
+                          <span class="more-options-item-text">{{ $t('opulent.sidebar.rename') }}</span>
                         </div>
                         <!-- <div class="more-options-item">
                           <Collect />
-                          <span class="more-options-item-text">{{ $t('lemon.sidebar.collect') }}</span>
+                          <span class="more-options-item-text">{{ $t('opulent.sidebar.collect') }}</span>
                         </div> -->
                         <div class="more-options-item err" @click="showDeleteConfirm(chat)">
                           <Delete />
-                          <span class="more-options-item-text">{{ $t('lemon.sidebar.delete') }}</span>
+                          <span class="more-options-item-text">{{ $t('opulent.sidebar.delete') }}</span>
                         </div>
                       </div>
                     </div>
@@ -75,7 +75,7 @@
               </div>
               <div v-if="chatStore.list.length === 0" class="no-chats">
                 <Chat />
-                <span>{{ $t('lemon.sidebar.noChats') }}</span>
+                <span>{{ $t('opulent.sidebar.noChats') }}</span>
               </div>
             </div>
           </div>
@@ -84,12 +84,12 @@
       </div>
       <a-modal
         v-model:open="deleteModalVisible"
-        :title="$t('lemon.sidebar.confirmDelete')"
+        :title="$t('opulent.sidebar.confirmDelete')"
       >
-        <p>{{ $t('lemon.sidebar.deleteConfirmation') }}</p>
+        <p>{{ $t('opulent.sidebar.deleteConfirmation') }}</p>
         <template #footer>
-          <a-button @click="handleCancel">{{ $t('lemon.sidebar.cancel') }}</a-button>
-          <a-button type="primary" @click="handleDelete">{{ $t('lemon.sidebar.confirm') }}</a-button>
+          <a-button @click="handleCancel">{{ $t('opulent.sidebar.cancel') }}</a-button>
+          <a-button type="primary" @click="handleDelete">{{ $t('opulent.sidebar.confirm') }}</a-button>
         </template>
       </a-modal>
       <a-modal
@@ -104,7 +104,7 @@
             <div class="search-header-icon">
               <MenuSearch />
             </div>
-            <a-input v-model:value="searchValue" :placeholder="$t('lemon.sidebar.searchPlaceholder')" />
+            <a-input v-model:value="searchValue" :placeholder="$t('opulent.sidebar.searchPlaceholder')" />
             <div class="search-header-icon" @click="handleCancel">
               <Close />
             </div>
@@ -136,18 +136,18 @@
 
   <a-modal 
       v-model:open="open" 
-      :title="$t('lemon.chatHeader.editTitle')" 
+      :title="$t('opulent.chatHeader.editTitle')" 
       centered  
       :width="400" 
       class="edit-title-modal" 
       :footer="null"
     > 
-      <span class="edit-title">{{ $t('lemon.chatHeader.enterNewTitle') }}</span>
+      <span class="edit-title">{{ $t('opulent.chatHeader.enterNewTitle') }}</span>
       <a-input v-model:value="titleValue" class="edit-title-input" />
       <footer>
         <div class="footer-btn">
-          <div class="cancel-btn" @click="handleCancelEdit">{{ $t('lemon.chatHeader.cancel') }}</div>
-          <div class="confirm-btn" @click="handleOkEdit">{{ $t('lemon.chatHeader.confirm') }}</div>
+          <div class="cancel-btn" @click="handleCancelEdit">{{ $t('opulent.chatHeader.cancel') }}</div>
+          <div class="confirm-btn" @click="handleOkEdit">{{ $t('opulent.chatHeader.confirm') }}</div>
         </div>
       </footer>
     </a-modal>

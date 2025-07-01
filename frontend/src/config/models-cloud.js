@@ -4,90 +4,114 @@ export const CLOUD_MODELS = [
     id: 1001,
     model_id: 'claude-opus-4-20250514',
     name: 'Claude Opus 4',
+    model_name: 'Claude Opus 4',
     platform: 'Anthropic',
+    platform_name: 'Anthropic',
     platform_id: 'anthropic',
     enabled: true,
     is_default: true,
     max_tokens: 4096,
     description: 'Most capable Claude model',
-    logo: '/images/anthropic.png'
+    logo: '/images/anthropic.png',
+    logo_url: '/images/anthropic.png'
   },
   {
     id: 1002,
     model_id: 'claude-3-5-sonnet-20241022',
     name: 'Claude 3.5 Sonnet',
+    model_name: 'Claude 3.5 Sonnet',
     platform: 'Anthropic',
+    platform_name: 'Anthropic',
     platform_id: 'anthropic',
     enabled: true,
     max_tokens: 4096,
     description: 'Fast and capable',
-    logo: '/images/anthropic.png'
+    logo: '/images/anthropic.png',
+    logo_url: '/images/anthropic.png'
   },
   {
     id: 1003,
     model_id: 'gpt-4-turbo-preview',
     name: 'GPT-4 Turbo',
+    model_name: 'GPT-4 Turbo',
     platform: 'OpenAI',
+    platform_name: 'OpenAI',
     platform_id: 'openai',
     enabled: true,
     max_tokens: 4096,
     description: 'Latest GPT-4 with 128k context',
-    logo: '/images/openai.png'
+    logo: '/images/openai.png',
+    logo_url: '/images/openai.png'
   },
   {
     id: 1004,
     model_id: 'gpt-3.5-turbo',
     name: 'GPT-3.5 Turbo',
+    model_name: 'GPT-3.5 Turbo',
     platform: 'OpenAI',
+    platform_name: 'OpenAI',
     platform_id: 'openai',
     enabled: true,
     max_tokens: 4096,
     description: 'Fast and cost-effective',
-    logo: '/images/openai.png'
+    logo: '/images/openai.png',
+    logo_url: '/images/openai.png'
   },
   {
     id: 1005,
     model_id: 'gemini-pro',
     name: 'Gemini Pro',
+    model_name: 'Gemini Pro',
     platform: 'Google',
+    platform_name: 'Google',
     platform_id: 'google',
     enabled: true,
     max_tokens: 4096,
     description: 'Google\'s advanced model',
-    logo: '/images/google.png'
+    logo: '/images/google.png',
+    logo_url: '/images/google.png'
   },
   {
     id: 1006,
     model_id: 'mixtral-8x7b-32768',
     name: 'Mixtral 8x7B',
+    model_name: 'Mixtral 8x7B',
     platform: 'Groq',
+    platform_name: 'Groq',
     platform_id: 'groq',
     enabled: true,
     max_tokens: 32768,
     description: 'Fast inference with Groq',
-    logo: '/images/groq.png'
+    logo: '/images/groq.png',
+    logo_url: '/images/groq.png'
   },
   {
     id: 1007,
     model_id: 'deepseek-coder',
     name: 'DeepSeek Coder',
+    model_name: 'DeepSeek Coder',
     platform: 'DeepSeek',
+    platform_name: 'DeepSeek',
     platform_id: 'deepseek',
     enabled: true,
     max_tokens: 4096,
     description: 'Specialized for coding',
-    logo: '/images/deepseek.png'
+    logo: '/images/deepseek.png',
+    logo_url: '/images/deepseek.png'
   },
   {
     id: 1008,
     model_id: 'pplx-70b-online',
     name: 'Perplexity 70B Online',
+    model_name: 'Perplexity 70B Online',
     platform: 'Perplexity',
+    platform_name: 'Perplexity',
     platform_id: 'perplexity',
     enabled: true,
     max_tokens: 4096,
     description: 'With real-time web access',
-    logo: '/images/perplexity.png'
+    logo: '/images/perplexity.png',
+    logo_url: '/images/perplexity.png'
   }
 ];
 
@@ -148,23 +172,26 @@ export const CLOUD_PLATFORMS = [
   }
 ];
 
-export const DEFAULT_MODEL_SETTINGS = {
-  assistant: {
+export const DEFAULT_MODEL_SETTINGS = [
+  {
+    setting_type: 'assistant',
     model_id: 1001,
     model_name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   },
-  'topic-naming': {
+  {
+    setting_type: 'topic-naming',
     model_id: 1002,
     model_name: 'Claude 3.5 Sonnet',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   },
-  'task-planning': {
+  {
+    setting_type: 'task-planning',
     model_id: 1001,
     model_name: 'Claude Opus 4',
     platform: 'Anthropic',
     platform_id: 'anthropic'
   }
-};
+];

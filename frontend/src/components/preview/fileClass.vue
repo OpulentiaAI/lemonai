@@ -7,7 +7,7 @@
         <div class="content">
             <div class="classList" v-if="!batchDownload">
                 <div class="header">
-                    <h1 class="title">{{ $t('lemon.fileExplorer.allFilesInTask') }}</h1>
+                    <h1 class="title">{{ $t('opulent.fileExplorer.allFilesInTask') }}</h1>
                     <div class="btns">
                         <div class="svg">
                             <downloadSvg @click="handleBatchDownload"
@@ -52,10 +52,10 @@
                                                 <template #title>
                                                     <div class="custom-tooltip">
                                                         <div class="svg-tooltip" @click="handlePreview(file)">
-                                                            <clickSvg /> {{ $t('lemon.fileExplorer.preview') }}
+                                                            <clickSvg /> {{ $t('opulent.fileExplorer.preview') }}
                                                         </div>
                                                         <div class="svg-tooltip" @click="handleFileDownload(file)">
-                                                            <downloadSvgDown /> {{ $t('lemon.fileExplorer.download') }}
+                                                            <downloadSvgDown /> {{ $t('opulent.fileExplorer.download') }}
                                                         </div>
                                                     </div>
                                                 </template>
@@ -72,7 +72,7 @@
                             <fileEmptySvg />
                         </div>
                         <div class="emptyText">
-                            <span>{{ $t('lemon.fileExplorer.noContent') }}</span>
+                            <span>{{ $t('opulent.fileExplorer.noContent') }}</span>
                         </div>
                     </div>
                 </div>
@@ -83,9 +83,9 @@
                 <div class="header">
                     <div class="selectAll" @click="selectAll">
                         <a-checkbox v-model:checked="selectedAll" :indeterminate="isIndeterminate" />
-                        <span>{{ $t('lemon.fileExplorer.selectAll') }}</span>
+                        <span>{{ $t('opulent.fileExplorer.selectAll') }}</span>
                     </div>
-                    <span class="cancel" @click="handleCancelBatchDownload">{{ $t('lemon.fileExplorer.cancel') }}</span>
+                    <span class="cancel" @click="handleCancelBatchDownload">{{ $t('opulent.fileExplorer.cancel') }}</span>
                 </div>
                 <!-- 文件列表 -->
                 <div class="batchMain">
@@ -113,7 +113,7 @@
                     <a-button type="primary" @click="confirmBatchDownload" class="btnDownload"
                         :class="clickDowload ? 'disableDownload' : 'enableDownload'">
                         <downloadSvg class="svg" />
-                        <span class="span">{{ $t('lemon.fileExplorer.batchDownload') }}</span>
+                        <span class="span">{{ $t('opulent.fileExplorer.batchDownload') }}</span>
                     </a-button>
                 </div>
             </div>

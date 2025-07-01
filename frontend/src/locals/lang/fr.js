@@ -1,8 +1,8 @@
 export default {
   //登录界面
   auth: {
-    loginToLemonAI: "Se connecter à LemonAI",
-    registerLemonAIAccount: "Créer un compte LemonAI",
+    loginToLemonAI: "Se connecter à OpulentAI",
+    registerLemonAIAccount: "Créer un compte OpulentAI",
     verifyEmail: "Vérifier l'e-mail",
     resetPassword: "Réinitialiser le mot de passe",
     loginWithGoogle: "Se connecter avec Google",
@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Vérification de la connexion Google en cours"
   },
   //主界面
-  lemon: {
+  opulent: {
     // 首页
     welcome: {
       greeting: "Bonjour",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "La fonction d'enregistrement sur Google Drive est en attente de développement."
     },
     preview: {
-      title: "L'ordinateur de Lemon",
+      title: "L'ordinateur d'Opulent",
       openVsCode: "VS Code",
-      using: "Lemon utilise",
+      using: "Opulent utilise",
       performing: "Exécution de",
       previousStep: "Étape précédente",
       nextStep: "Étape suivante",

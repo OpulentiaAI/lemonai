@@ -96,10 +96,12 @@ function handleOpenReleasePage() {
 }
 
 function handleOpenLemonPage() {
+  // TODO: Update this URL to the new Opulent website
   window.open('https://www.lemonai.cc/', '_blank');
 }
 
 function handleIssuePage() {
+  // TODO: Update this URL if the GitHub repository changes
   window.open('https://github.com/hexdocom/lemonai/issues/new', '_blank');
 }
 

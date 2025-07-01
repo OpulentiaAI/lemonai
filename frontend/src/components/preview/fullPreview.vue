@@ -16,17 +16,17 @@
               <div class="custom-tooltip">
                 <div class="svg-tooltip" @click="handleFileDownload(file); downloadTooltipVisible = false">
                   <downloadSvgDown />
-                  {{ $t('lemon.fullPreview.download') }}
+                  {{ $t('opulent.fullPreview.download') }}
                 </div>
                 <div class="svg-tooltip" v-if="canBeMd" @click="handleExportPDF(); downloadTooltipVisible = false">
                   <pdfExportSvg />
-                  {{ $t('lemon.fullPreview.exportToPDF') }}
+                  {{ $t('opulent.fullPreview.exportToPDF') }}
                 </div>
 
                 <!-- <div class="line"></div> -->
                 <!-- <div class="svg-tooltip"
                     @click="handleSaveToGoogleDrive(); downloadTooltipVisible = false">
-                    <googleDriverSvg /> {{ $t('lemon.fullPreview.saveToGoogleDrive') }}
+                    <googleDriverSvg /> {{ $t('opulent.fullPreview.saveToGoogleDrive') }}
                 </div> -->
 
               </div>
@@ -38,7 +38,7 @@
 
           <a-tooltip v-if="!isFullPreview" :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.maximize') }}</span>
+              <span class="tips-text">{{ $t('opulent.fullPreview.maximize') }}</span>
             </template>
             <button class="icon-bt" @click="isFullPreview = true">
               <maxMizeSvg />
@@ -46,7 +46,7 @@
           </a-tooltip>
           <a-tooltip v-if="isFullPreview" :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.minimize') }}</span>
+              <span class="tips-text">{{ $t('opulent.fullPreview.minimize') }}</span>
             </template>
             <button class="icon-bt" @click="isFullPreview = false">
               <minMizeSvg />
@@ -56,7 +56,7 @@
 
           <a-tooltip :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.previous') }}</span>
+              <span class="tips-text">{{ $t('opulent.fullPreview.previous') }}</span>
             </template>
             <button class="icon-bt" @click="currentIndex--" :class="currentIndex > 0 ? null : 'disableBtn'">
               <leftSvg />
@@ -64,7 +64,7 @@
           </a-tooltip>
           <a-tooltip :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.next') }}</span>
+              <span class="tips-text">{{ $t('opulent.fullPreview.next') }}</span>
             </template>
             <button class="icon-bt" @click="currentIndex++"
               :class="currentIndex < fileList.length - 1 ? null : 'disableBtn'">
@@ -77,16 +77,16 @@
               <div class="custom-tooltip more-tooltip">
                 <div class="svg-tooltip" @click="handleCopyContent(content); moreOptionsTooltipVisible = false">
                   <copySvg />
-                  {{ $t('lemon.fullPreview.copy') }}
+                  {{ $t('opulent.fullPreview.copy') }}
                 </div>
                 <div class="svg-tooltip" v-if="rendering" @click="rendering = false; moreOptionsTooltipVisible = false">
                   <codeSvg />
-                  {{ $t('lemon.fullPreview.code') }}
+                  {{ $t('opulent.fullPreview.code') }}
                 </div>
                 <div class="svg-tooltip" v-if="canBeMd && !rendering || canBeHtml && !rendering"
                   @click="rendering = true; moreOptionsTooltipVisible = false">
                   <eyeSvg />
-                  {{ $t('lemon.fullPreview.preview') }}
+                  {{ $t('opulent.fullPreview.preview') }}
                 </div>
               </div>
             </template>
@@ -96,7 +96,7 @@
           </a-tooltip>
           <a-tooltip :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.close') }}</span>
+              <span class="tips-text">{{ $t('opulent.fullPreview.close') }}</span>
             </template>
             <button class="icon-bt icon-tip" @click="isFullPreview = false; fullPreviewVisable = false">
               <closeSvg />
@@ -131,17 +131,17 @@
               </div>
               <div class="file-info">
                 <div class="file-name">{{ file.filepath.split("/").pop().split("\\").pop() }}</div>
-                <div class="file-type">{{ $t('lemon.fullPreview.fileTypePresentation') }}</div>
+                <div class="file-type">{{ $t('opulent.fullPreview.fileTypePresentation') }}</div>
               </div>
             </div>
           </div>
           <div class="tips">
-            {{ $t('lemon.fullPreview.cannotPreviewFormat') }}<br>
-            {{ $t('lemon.fullPreview.downloadToView') }}
+            {{ $t('opulent.fullPreview.cannotPreviewFormat') }}<br>
+            {{ $t('opulent.fullPreview.downloadToView') }}
           </div>
           <a-button class="download-bt" @click="handleFileDownload(file)">
             <downloadSvg />
-            <span class="text">{{ $t('lemon.fullPreview.download') }}</span>
+            <span class="text">{{ $t('opulent.fullPreview.download') }}</span>
           </a-button>
         </div>
 

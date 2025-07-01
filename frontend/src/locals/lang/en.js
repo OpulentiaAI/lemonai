@@ -28,8 +28,8 @@ export default {
       },
     },
     auth: {
-      loginToLemonAI: "Login to LemonAI",
-      registerLemonAIAccount: "Register LemonAI Account",
+      loginToLemonAI: "Login to OpulentAI",
+      registerLemonAIAccount: "Register OpulentAI Account",
       verifyEmail: "Verify Email",
       resetPassword: "Reset Password",
       loginWithGoogle: "Login with Google",
@@ -150,7 +150,7 @@ export default {
       alreadyCurrentMember: "Already a current member",
     },
     //主界面
-    lemon: {
+    opulent: {
       // 首页
       welcome: {
         greeting: "Hello",
@@ -274,9 +274,9 @@ export default {
         saveToGoogleDrivePending: "Save to Google Drive feature is under development."
       },
       preview: {
-        title: "Lemon's computer",
+        title: "Opulent's computer",
         openVsCode: "VS Code",
-        using: "Lemon is using",
+        using: "Opulent is using",
         performing: "Performing",
         previousStep: "Previous step",
         nextStep: "Next step",
@@ -425,7 +425,7 @@ export default {
           OpenRouter: "OpenRouter",
           LMStudio: "LM Studio",
           Cloudsway: "Cloudsway",
-          Lemon: "Lemon",
+          Lemon: "Opulent",
 
         },
         showMoreOptions: "Show more options",
@@ -601,7 +601,7 @@ export default {
       },
       about: {
         title: "About",
-        lemonAI: "LemonAI",
+        lemonAI: "OpulentAI",
         checkUpdate: "Check update",
         officialWebsite: "Official website",
         view: "View",

@@ -35,7 +35,7 @@
                 class="model-select"
                 @change="changeModel"
                 v-model:value="selectedModel"
-                :placeholder="$t('lemon.input.chooseModel')"
+                :placeholder="$t('opulent.input.chooseModel')"
                 style="width: 200px"
                 :options="groupedOptions"
                 optionLabelProp="label"
@@ -59,7 +59,7 @@
                 <template #overlay>
                   <a-menu :selectedKeys="mcpMenuSelectedKeys" multiple class="mcp-server-menu" @click="handleMcpMenuClick">
                     <a-menu-item key="disable">
-                      <span>不启用 MCP</span>
+                      <span>Disable MCP</span>
                     </a-menu-item>
                     <a-menu-divider />
                     <a-menu-item v-for="server in mcpServers" :key="server.id" class="mcp-server-item">
@@ -80,7 +80,7 @@
                 </svg>
               </template>
             </a-button>
-            <!-- 停止按钮 -->
+            <!-- Stop button -->
             <button v-else class="stop-button" @click="handleStop">
               <div></div>
             </button>
@@ -116,11 +116,11 @@ const { user, membership, points } = storeToRefs(userStore);
 
 const chatStore = useChatStore();
 const messageText = ref("");
-const placeholder = ref(t("lemon.welcome.placeholder"));
+const placeholder = ref(t("opulent.welcome.placeholder"));
 const currentMode = ref("text");
 const fileList = ref([]);
 const selectedModel = ref(null);
-const modelList = ref([]); // ✅ 改为响应式
+const modelList = ref([]); // ✅ Changed to reactive
 
 const emit = defineEmits(["send"]);
 
@@ -208,7 +208,7 @@ const initModel = async () => {
 };
 
 const messageStatus = computed(() => {
-  //根据会话ID 找到 当前会话的状态
+  // Find the current conversation status based on conversation ID
   if (!chatStore.chat) {
     return false;
   }
@@ -228,7 +228,7 @@ onMounted(async () => {
   });
 });
 
-//检查模型和搜索服务的配置情况
+// Check model and search service configuration
 // let res =  await modelService.checkModel();
 // if(res.has_default_platform && res.has_enabled_platform && res.has_search_setting){
 const checkModel = async () => {
@@ -257,7 +257,7 @@ const handleNotification = async (path, message, toMessage) => {
 };
 
 const isLogin = computed(() => {
-  //判断是否存在用户ID user
+  // Check if user ID exists
   if (user.value.id) {
     return true;
   }
@@ -278,7 +278,7 @@ const handleSend = async () => {
   if (text || fileList.value.length > 0) {
     let res = await checkModel();
     if (!res.has_default_platform) {
-      //请前往设置默认模型
+      // Please go to settings to set default model
       message.warning(t("please_select_model"));
       return;
     }
@@ -300,7 +300,7 @@ const handleSend = async () => {
       handleNotification("/setting/search-service", t("auth.login"), t("auth.subscribeService"));
       return;
     }
-    // 判断积分
+    // Check points
     if (points.value.total <= 0 && isLogin.value && (model.is_subscribe || searchEngine.value.provider_name === "Lemon")) {
       handleNotification("/setting/usage", t("auth.insufficientPoints"), t("auth.insufficientPointsPleaseGoToUpgradeOrPurchase"));
       return;
@@ -316,12 +316,12 @@ const handleSend = async () => {
   }
 };
 
-//停止
+// Stop
 const handleStop = () => {
   chatStore.handleStop();
 };
 
-//转化文件大小
+// Convert file size
 const formatFileSize = (size) => {
   if (size < 1024) {
     return size + " B";
@@ -357,7 +357,7 @@ const handleDelete = (file) => {
   files.deleteFile(file.id);
 };
 
-//输入框键盘事件
+// Input box keyboard event
 const keydown = (e) => {
   if (e.shiftKey && e.key === "Enter") {
     return;
@@ -443,7 +443,7 @@ const keydown = (e) => {
   }
 }
 
-/* 禁用状态下的样式 */
+/* Styles for disabled state */
 .send-button:disabled,
 .send-button[disabled] {
   background: #37352f14;

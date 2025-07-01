@@ -28,8 +28,8 @@
       },
     },
     auth: {
-      loginToLemonAI: "登录 LemonAI",
-      registerLemonAIAccount: "注册 LemonAI 账户",
+      loginToLemonAI: "登录 OpulentAI",
+      registerLemonAIAccount: "注册 OpulentAI 账户",
       verifyEmail: "验证邮箱",
       resetPassword: "重置密码",
       loginWithGoogle: "使用 Google 登录",
@@ -150,7 +150,7 @@
       alreadyCurrentMember:"已开通该会员"
     },
     //主界面
-    lemon: {
+    opulent: {
       // 首页
       welcome: {
         greeting: "你好",
@@ -274,9 +274,9 @@
         saveToGoogleDrivePending: "保存到Google Drive功能待实现。"
       },
       preview: {
-        title: "Lemon的电脑",
+        title: "Opulent的电脑",
         openVsCode: "VS Code",
-        using: "Lemon 正在使用",
+        using: "Opulent 正在使用",
         performing: "正在执行",
         previousStep: "上一步",
         nextStep: "下一步",
@@ -425,7 +425,7 @@
           OpenRouter: "OpenRouter",
           LMStudio: "LM Studio",
           Cloudsway: "Cloudsway",
-          Lemon: "Lemon",
+          Lemon: "Opulent",
 
         },
         showMoreOptions: " 更多选项",
@@ -606,7 +606,7 @@
       },
       about: {
         title: "关于",
-        lemonAI: "LemonAI",
+        lemonAI: "OpulentAI",
         checkUpdate: "检查更新",
         officialWebsite: "官方网站",
         view: "查看",

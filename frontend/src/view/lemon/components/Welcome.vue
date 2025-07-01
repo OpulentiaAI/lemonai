@@ -7,8 +7,8 @@
       </div> -->
     </div>
     <div class="welcome-content">
-      <h1>{{ $t("lemon.welcome.greeting", { username }) }}</h1>
-      <p>{{ $t("lemon.welcome.question") }}</p>
+      <h1>{{ $t("opulent.welcome.greeting", { username }) }}</h1>
+      <p>{{ $t("opulent.welcome.question") }}</p>
       <ChatInput @send="handleWelcomeInput" />
     </div>
     <!--  -->
@@ -16,16 +16,16 @@
     <!-- 案例
     <div class="case-container">
       <div class="category-tabs">
-        <a href="#" class="tab active">{{ $t('lemon.welcome.tabs.featured') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.research') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.lifestyle') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.dataAnalysis') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.education') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.productivity') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.other') }}</a>
+        <a href="#" class="tab active">{{ $t('opulent.welcome.tabs.featured') }}</a>
+        <a href="#" class="tab">{{ $t('opulent.welcome.tabs.research') }}</a>
+        <a href="#" class="tab">{{ $t('opulent.welcome.tabs.lifestyle') }}</a>
+        <a href="#" class="tab">{{ $t('opulent.welcome.tabs.dataAnalysis') }}</a>
+        <a href="#" class="tab">{{ $t('opulent.welcome.tabs.education') }}</a>
+        <a href="#" class="tab">{{ $t('opulent.welcome.tabs.productivity') }}</a>
+        <a href="#" class="tab">{{ $t('opulent.welcome.tabs.other') }}</a>
       </div>
       <div class="case-title">
-        <span>{{ $t('lemon.welcome.communityNote') }}</span>
+        <span>{{ $t('opulent.welcome.communityNote') }}</span>
       </div>
       <Suggestion />
     </div>

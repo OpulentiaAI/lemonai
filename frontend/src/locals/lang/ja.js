@@ -1,8 +1,8 @@
 export default {
   // ログイン画面
   auth: {
-    loginToLemonAI: "LemonAIにログイン",
-    registerLemonAIAccount: "LemonAIアカウントを登録",
+    loginToLemonAI: "OpulentAIにログイン",
+    registerLemonAIAccount: "OpulentAIアカウントを登録",
     verifyEmail: "メール認証",
     resetPassword: "パスワードのリセット",
     loginWithGoogle: "Googleでログイン",
@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Googleログインを認証中"
   },
   // メイン画面
-  lemon: {
+  opulent: {
     // ホーム
     welcome: {
       greeting: "こんにちは",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "Google Driveへの保存機能は準備中です。"
     },
     preview: {
-      title: "Lemonのコンピュータ",
+      title: "Opulentのコンピュータ",
       openVsCode: "VS Code",
-      using: "Lemonが使用中",
+      using: "Opulentが使用中",
       performing: "実行中",
       previousStep: "前のステップ",
       nextStep: "次のステップ",

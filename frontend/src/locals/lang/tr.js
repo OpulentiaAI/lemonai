@@ -1,8 +1,8 @@
 export default {
   // Giriş Arayüzü
   auth: {
-    loginToLemonAI: "LemonAI'a Giriş Yap",
-    registerLemonAIAccount: "LemonAI Hesabı Kaydol",
+    loginToLemonAI: "OpulentAI'a Giriş Yap",
+    registerLemonAIAccount: "OpulentAI Hesabı Kaydol",
     verifyEmail: "E-posta Doğrulama",
     resetPassword: "Şifre Sıfırlama",
     loginWithGoogle: "Google ile Giriş Yap",
@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Google ile giriş doğrulanıyor"
   },
   // Ana Arayüz
-  lemon: {
+  opulent: {
     // Ana Sayfa
     welcome: {
       greeting: "Merhaba",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "Google Drive'a kaydetme özelliği geliştirme aşamasında."
     },
     preview: {
-      title: "Lemon'un Bilgisayarı",
+      title: "Opulent'in Bilgisayarı",
       openVsCode: "VS Code",
-      using: "Lemon kullanıyor",
+      using: "Opulent kullanıyor",
       performing: "Yürütülüyor",
       previousStep: "Önceki adım",
       nextStep: "Sonraki adım",

@@ -1,8 +1,8 @@
 export default {
   //登录界面
   auth: {
-    loginToLemonAI: "Bei LemonAI anmelden",
-    registerLemonAIAccount: "LemonAI-Konto registrieren",
+    loginToLemonAI: "Bei OpulentAI anmelden",
+    registerLemonAIAccount: "OpulentAI-Konto registrieren",
     verifyEmail: "E-Mail verifizieren",
     resetPassword: "Passwort zurücksetzen",
     loginWithGoogle: "Mit Google anmelden",
@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Google-Anmeldung wird überprüft"
   },
   //主界面
-  lemon: {
+  opulent: {
     // 首页
     welcome: {
       greeting: "Hallo",

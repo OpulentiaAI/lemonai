@@ -7,10 +7,10 @@
     <div class="header-right">
       <!-- <div class="share-btn" @click="$emit('share')">
         <Share />
-        <span style="min-width: max-content;">{{ $t('lemon.chatHeader.share') }}</span>
+        <span style="min-width: max-content;">{{ $t('opulent.chatHeader.share') }}</span>
       </div> -->
       <div class="search-file-btn btn ">
-        <a-tooltip :title="$t('lemon.chatHeader.viewAllFiles')" placement="bottom" :arrow="false">
+        <a-tooltip :title="$t('opulent.chatHeader.viewAllFiles')" placement="bottom" :arrow="false">
           <SearchFile @click="handleFileExplorer" />
         </a-tooltip>
       </div>
@@ -20,13 +20,13 @@
         </a-tooltip>
       </div> -->
       <div class="more-btn btn" @click="handleMore">
-        <a-tooltip :title="$t('lemon.chatHeader.moreOptions')" placement="bottom" :arrow="false">
+        <a-tooltip :title="$t('opulent.chatHeader.moreOptions')" placement="bottom" :arrow="false">
           <More />
         </a-tooltip>
         <div class="more-menu" v-if="showMore">
           <div class="edit-name" @click="handleEditName">
             <Edit />
-            <span>{{ $t('lemon.chatHeader.rename') }}</span>
+            <span>{{ $t('opulent.chatHeader.rename') }}</span>
             <div style="width: 16px; height: 16px;"></div>
           </div>
         </div>
@@ -34,18 +34,18 @@
     </div>
     <a-modal 
       v-model:open="open" 
-      :title="$t('lemon.chatHeader.editTitle')" 
+      :title="$t('opulent.chatHeader.editTitle')" 
       centered  
       :width="400" 
       class="edit-title-modal" 
       :footer="null"
     > 
-      <span class="edit-title">{{ $t('lemon.chatHeader.enterNewTitle') }}</span>
+      <span class="edit-title">{{ $t('opulent.chatHeader.enterNewTitle') }}</span>
       <a-input v-model:value="titleValue" class="edit-title-input" />
       <footer>
         <div class="footer-btn">
-          <div class="cancel-btn" @click="handleCancel">{{ $t('lemon.chatHeader.cancel') }}</div>
-          <div class="confirm-btn" @click="handleOk">{{ $t('lemon.chatHeader.confirm') }}</div>
+          <div class="cancel-btn" @click="handleCancel">{{ $t('opulent.chatHeader.cancel') }}</div>
+          <div class="confirm-btn" @click="handleOk">{{ $t('opulent.chatHeader.confirm') }}</div>
         </div>
       </footer>
     </a-modal>
