@@ -42,7 +42,10 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': path.resolve(__dirname, 'src'),
         '~@': path.resolve(__dirname, 'src'),
-        'path': 'path-browserify' // Fix for browser compatibility
+        'path': 'path-browserify', // Fix for browser compatibility
+        '@/utils/http.js': path.resolve(__dirname, 'src/utils/http-cloud.js'), // Use cloud http in production
+        '@/services/platforms.js': path.resolve(__dirname, 'src/services/platforms-cloud.js'), // Use cloud platforms service
+        '@/services/default-model-setting.js': path.resolve(__dirname, 'src/services/default-model-setting-cloud.js') // Use cloud model settings
       },
     },
     define: {
