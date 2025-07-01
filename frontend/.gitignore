@@ -26,3 +26,4 @@ docs
 *.sw?
 *.development
 .trae/*
+.vercel

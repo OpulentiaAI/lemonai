@@ -1,0 +1,51 @@
+{
+  "buildCommand": "cd frontend && npm install && npm run build:web",
+  "outputDirectory": "frontend/dist",
+  "installCommand": "npm install",
+  "framework": "vue",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "functions": {
+    "api/v1/chat/*.js": {
+      "maxDuration": 60
+    },
+    "api/v1/runtime/*.js": {
+      "maxDuration": 300
+    },
+    "api/v1/search/*.js": {
+      "maxDuration": 30
+    },
+    "api/v1/browser/*.js": {
+      "maxDuration": 120
+    },
+    "api/v1/memory/*.js": {
+      "maxDuration": 30
+    },
+    "api/v1/mcp/*.js": {
+      "maxDuration": 60
+    }
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "VITE_CLOUD_MODE": "true"
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+      ]
+    }
+  ]
+}

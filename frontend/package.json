@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:web": "vite build --config vite.config.web.js",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "md5": "^2.3.0",
     "mermaid": "^11.6.0",
     "mitt": "^3.0.1",
+    "path-browserify": "^1.0.1",
     "pinia": "^2.2.6",
     "pinia-plugin-persistedstate": "^3.2.3",
     "prismjs": "^1.30.0",

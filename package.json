@@ -9,6 +9,8 @@
     "dev": "./node_modules/.bin/nodemon bin/www",
     "prd": "pm2 start bin/www",
     "test": "mocha ./test/**/*.test.js",
+    "test-supabase": "node test-supabase.js",
+    "deploy": "./deploy-vercel.sh",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "make-skip": "electron-forge make --skip-package",
