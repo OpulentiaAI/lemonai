@@ -5,6 +5,18 @@
   "framework": "vue",
   "rewrites": [
     {
+      "source": "/api/model/enabled",
+      "destination": "/api/v1/model/enabled"
+    },
+    {
+      "source": "/api/platform",
+      "destination": "/api/v1/platform/index"
+    },
+    {
+      "source": "/api/default_model_setting",
+      "destination": "/api/v1/default_model_setting/index"
+    },
+    {
       "source": "/api/:path*",
       "destination": "/api/:path*"
     },
