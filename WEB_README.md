@@ -24,3 +24,10 @@ VITE\_PORT=5005\
 
 *
   * Description: After the front end is started, you can passhttp://localhost:5005Access the Lemon app.
+
+### New Frontend Features
+- Loading and error states for a better user experience.
+- Custom error classes for improved error handling.
+- Circuit breaker to prevent repeated failures.
+- Notification rate limiting to avoid spamming the user.
+- Request correlation IDs for easier debugging.

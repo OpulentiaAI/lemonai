@@ -119,6 +119,10 @@ This project implements MCP for tool integration:
 - **file operations**: Read/write files
 - **mcp_tools**: Dynamic MCP server tools
 
+### API Enhancements
+- **Rate Limiting & Metrics**: The API now includes rate limiting to prevent abuse and metrics to monitor performance.
+- **Input Validation**: Joi has been integrated for robust input validation on API endpoints.
+
 ## Browser Automation
 
 The browser_server provides web automation:

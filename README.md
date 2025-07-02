@@ -55,6 +55,10 @@ Feature-rich framework with extensive capabilities:
 - Code generation & execution
 - Browser operations & web search
 - Multi-tool integration
+- Rate limiting and request metrics
+- Circuit breaker and notification rate limiting
+- Joi input validation
+- Custom error classes
 
 Highly adaptable architecture allows for custom modifications and extensions to fit specific business requirements and integration with existing systems.
 
